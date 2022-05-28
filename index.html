@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Password Authentication</title>
+</head>
+<body id="home">
+    <h1>Password Authentication</h1>
+    <div class="container">
+
+        <div class="item1">
+            <input type="password" placeholder="Create Your Password" id="create" onkeypress="validate()">
+       <P class="valid" id="signupValid">Password saved successfully</P>
+       <P class="invalid" id="signupInvalid">Kindly follow the authentication intruction.!!!</P>
+        <p class="invalid" id="em1">Enter Password according to the instruction</p>
+        <p class="valid" id="em2">Weak Password...!!!</p>
+        <p class="valid" id="em3">Medium Password...!!!</p>
+        <p class="valid" id="em4">Strong Password...!!!</p>
+        
+      <button onclick="signup()">SignUp</button>
+    </div>
+    
+    <div class="item2">
+        <input type="password" placeholder="Enter Your Password" id="check">
+        <p class="valid" id="loginValid">Password correct</p>
+        <p class="invalid" id="loginInvalid">Password Incorrect</p>
+        <Button onclick="login()">Login</Button>
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
